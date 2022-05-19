@@ -24,6 +24,7 @@ import org.apache.cxf.jaxrs.ext.multipart.Attachment;
 import org.apache.cxf.jaxrs.ext.multipart.Multipart;
 import java.io.InputStream;
 import java.util.List;
+import org.wso2.carbon.identity.organization.management.endpoint.model.ApplicationSharedDTO;
 import org.wso2.carbon.identity.organization.management.endpoint.model.Error;
 import org.wso2.carbon.identity.organization.management.endpoint.model.GetOrganizationResponse;
 import java.util.List;
@@ -62,4 +63,6 @@ public interface OrganizationsApiService {
       public Response organizationsOrganizationIdUsersUserIdRolesGet(String organizationId, String userId);
 
       public Response organizationsPost(OrganizationPOSTRequest organizationPOSTRequest);
+
+      public Response shareOrgApplication(String organizationId, String applicationId, List<String> requestBody);
 }

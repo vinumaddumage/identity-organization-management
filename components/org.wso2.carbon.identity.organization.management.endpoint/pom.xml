@@ -109,6 +109,10 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.organization.management</groupId>
+            <artifactId>org.wso2.carbon.identity.organization.management.application</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

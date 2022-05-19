@@ -115,4 +115,9 @@ public class OrganizationsApiServiceImpl implements OrganizationsApiService {
         return organizationManagementService.getRolesFromOrganizationAndUser(organizationId, userId);
     }
 
+    @Override
+    public Response shareOrgApplication(String organizationId, String applicationId, List<String> childOrgs) {
+
+        return organizationManagementService.shareOrganizationApplication(organizationId, applicationId, childOrgs);
+    }
 }

@@ -119,6 +119,16 @@ public class Utils {
     }
 
     /**
+     * Get the username of the authenticated user.
+     *
+     * @return the username of the authenticated user.
+     */
+    public static String getAuthenticatedUsername() {
+
+        return PrivilegedCarbonContext.getThreadLocalCarbonContext().getUsername();
+    }
+
+    /**
      * Get the user ID.
      *
      * @return the user ID.
